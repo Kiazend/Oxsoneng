@@ -1,0 +1,406 @@
+/* global */
+body { -webkit-font-smoothing: antialiased; background-color: transparent; color: #626262; font-family: 'Lato', sans-serif; }
+body, html { height: 100% }
+a { -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; text-decoration: none !important; transition: 0.3s }
+.space30 { margin-top: 30px }
+.padding30 { padding-top: 30px }
+
+header .navbar { padding: 20px 0 }
+    header #header-social { text-align: right; font-size: 24px; }
+        header #header-social i { padding: 0 5px }
+            header #header-social a.facebook { color: #3B5998 !important }
+            header #header-social a.houzz { color: #4DBC15 !important }
+            header #header-social a.instagram { color: #833AB4 !important }
+            header #header-social a.linkedin { color: #2867B2 !important }
+            header #header-social a.pinterest { color: #BD081C !important }
+            header #header-social a.email-mask { color: #4A4A4A !important }
+    header .navbar .navbar-nav { margin-top: 10px }
+        header .navbar .navbar-nav li { font-size: 16px; text-transform: uppercase }
+    		header .navbar .navbar-nav li a { color: #626262; transition: 0.3s; padding: 5px 0 !important; margin: 0 10px !important; border-bottom: 3px #fff solid; }
+            header .navbar .navbar-nav li a:hover, header .navbar .navbar-nav li.active a, header .navbar .navbar-nav li.show a { color: #626262; border-bottom: 3px #d1d0d0 solid; }
+            header .navbar .navbar-nav li a.dropdown-item { border: none !important; font-size: 16px !important; margin: 0 !important; padding: 5px 10px !important }
+            header .navbar .navbar-nav li a.dropdown-item:hover { background-color: #d1d0d0 !important }
+            header .navbar .navbar-nav li .dropdown-menu { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0 }
+
+.home-carousel { max-height: 745px; }
+    .home-carousel .carousel-inner img { object-fit:cover; height:745px !important; width: 100% }
+    .home-carousel .carousel-caption { /*background-color: rgba(0, 0, 0, 0.5);*/ left: 0%; right: 0%; bottom: 0%; height: 105px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */}
+        .home-carousel .carousel-caption h3 { font-size: 25px; text-align: left; font-weight: 300; letter-spacing: 2px; margin-top: 20px  }
+        .home-carousel .carousel-caption a.btn-view-project { background-color: #fff; font-size: 14px; text-transform: uppercase; border-radius: 0px; padding: 8px 30px; margin-top: 15px; border: 1px #585757 solid; }
+            .home-carousel .carousel-caption a.btn-view-project:hover { color: #fff; background-color: #585757; border: 1px #585757 solid; border-radius: 0; text-transform: uppercase; font-weight: 300; }
+
+section { margin: 0 40px }
+.specialists h2 { font-size: 22px; text-transform: uppercase; text-align: center; padding: 40px 0; font-weight: 300; letter-spacing: 2px; margin: 0; }
+
+.dark-grey-background { background-color: #585757; padding: 50px 0 40px 0; text-align: center; margin-bottom: 40px }
+    .dark-grey-background p { font-size: 18px; color: #fff; font-weight: 300; line-height: 30px; }
+    .dark-grey-background a { font-size: 30px; color: #fff; font-weight: 300; line-height: 70px; }
+
+.light-grey-background { background-color: #d1d0d0; text-align: center; }
+    .light-grey-background h3 { font-size: 33px; text-transform: uppercase; font-weight: 300; margin-bottom: 60px }
+    .light-grey-background p { font-size: 18px; line-height: 35px; }
+    .light-grey-background a.btn-more { font-size: 18px; background-color: #fff; padding: 15px 30px; border: 1px #585757 solid; border-radius: 0; text-transform: uppercase; font-weight: 300; margin-top: 30px}
+        .light-grey-background a.btn-more:hover { color: #fff; background-color: #585757; border: 1px #585757 solid; }
+
+.concept-grey-background { background-color: #d1d0d0; text-align: left; margin-bottom: 40px; padding: 70px }
+    .concept-grey-background h2 { font-size: 33px; font-weight: 300; text-transform: uppercase; padding-bottom: 40px; text-align: left }
+    .concept-grey-background h4 { font-size: 33px; font-weight: 300; text-transform: uppercase; padding-bottom: 40px; }
+    .concept-grey-background img { padding-bottom: 50px; }
+    .concept-grey-background p.strap { font-size: 29px; font-weight: 600; line-height: 30px; }
+    .concept-grey-background p { font-size: 18px; font-weight: 300; line-height: 30px; }
+    .concept-grey-background a.btn-more { font-size: 18px; background-color: #fff; padding: 15px 30px; border: 1px #585757 solid; border-radius: 0; text-transform: uppercase; font-weight: 300; margin-top: 30px}
+        .concept-grey-background a.btn-more:hover { color: #fff; background-color: #585757; border: 1px #585757 solid; }
+
+.home-service-image { object-fit:cover; height: 100% !important; width: 100% }
+.home-service { padding: 130px 100px }
+
+#testimonial-carousel { background-image: url('/img/layout/testimonial-banner-6.jpg'); background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat; height: 540px; margin: 40px 0 }
+    #testimonial-carousel .carousel-caption { top: 35%  }
+    #testimonial-carousel .carousel-caption .testimonial-text { font-size: 25px; font-style: italic; line-height: 40px;  }
+    #testimonial-carousel .carousel-caption .testimonial-author { font-size: 20px; line-height: 40px; text-transform: uppercase; font-weight: 300; }
+    #testimonial-carousel .carousel-indicators { bottom: 10% }
+        #testimonial-carousel .carousel-indicators li { width: 10px; height: 10px; border-radius: 100%; }
+
+.testimonial { object-fit:cover; height: 100% !important; width: 100% }
+
+#portfolio { text-align: center; margin-top: 50px }
+    #portfolio h5 { font-size: 30px; font-weight: 300; text-transform: uppercase; line-height: 45px; padding-bottom: 30px; }
+    #portfolio p.strap { font-size: 18px; margin-bottom: 50px }
+    #portfolio .portfolio { background-color: #FF0; position: relative; overflow: hidden; max-width: 100%; height: auto; }
+        #portfolio .portfolio img { max-width: 100%; }
+        #portfolio .portfolio .portfolio-img { display: block; }
+        #portfolio .portfolio .portfolio-text { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); color: #fff;  -moz-transition: all 0.4s ease-in-out 0s; -webkit-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s }
+            #portfolio .portfolio:hover .portfolio-text, .portfolio.active .portfolio-text { opacity: 1; }
+            #portfolio .portfolio .portfolio-info { font-size: 22px; font-weight: 300; padding: 0 30px; text-transform: uppercase; width: 100% }
+        #portfolio .portfolio .portfolio-info .btn-project { font-size: 14px; background-color: #fff; padding: 10px 20px; border: 1px #585757 solid; border-radius: 0; text-transform: uppercase; font-weight: 300; margin-top: 5px}
+            #portfolio .portfolio .portfolio-info .btn-project:hover { color: #fff; background-color: #585757; border: 1px #585757 solid; }
+
+    .owl-carousel { padding: 0 75px; position: relative }
+    .owl-next, .owl-prev { bottom: 0; color: #D1D0D0 !important; display: block !important; font-size: 45px !important; height: 70px; margin: auto; position: absolute; top: 0; width: 40px }
+    .owl-prev { left: 10px }
+    .owl-next { right: 10px }
+
+.share-social { text-align: center; font-size: 16px; text-transform: uppercase; margin: 50px 0; }
+    .share-social p { display: inline-block; line-height: 43px}
+    .share-social i { font-size: 43px; margin: 10px }
+        .share-social i.fa-facebook-square { color: #4f5089 }
+        .share-social i.fa-twitter-square { color: #1DA1F2 }
+        .share-social i.fa-linkedin { color: #2867B2 }
+       
+footer { background-color: #585757; padding: 40px 0 20px 0; color: #fff }
+    footer p { line-height: 20px; font-size: 16px; padding: 0; margin: 0; font-weight: 300; }
+    footer p a { color: #fff !important }
+
+    footer #footer-social { margin-top: 20px }
+        footer #footer-social a { font-size: 26px; margin-right: 10px }
+            footer #footer-social a.facebook { color: #fff !important }
+            footer #footer-social a.houzz { color: #fff !important }
+            footer #footer-social a.instagram { color: #fff !important }
+            footer #footer-social a.linkedin { color: #fff !important }
+            footer #footer-social a.pinterest { color: #fff !important }
+
+    footer #footer-logos { text-align: right }
+        footer #footer-logos img { height: 65px }
+        footer #footer-logos #footer-silver-investors-02 { margin-bottom: 15px }
+        footer #footer-logos #footer-labc-02 { height: 50px; margin-right: 10px }
+        
+.copyright-strap { background-color: #585757; font-size: 12px; color: #fff; margin-bottom: 40px; padding-top: 10px; }
+    .copyright-strap .right { text-align: right }
+    .copyright-strap img { position: relative; top: -2px }
+
+/* sidebar */
+#btn-sidebar { display: none }
+#sidebar { background-color: #fff; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); color: #626262; height: 100vh; left: -275px; overflow-y: scroll; position: fixed; top: 0; transition: all 0.3s; width: 275px; z-index: 999 }
+	#sidebar.active { left: 0 }
+	#sidebar .sidebar-header { padding: 20px 10px 17px 10px }
+	#sidebar #dismiss { -o-transition: all 0.3s; -webkit-transition: all 0.3s; background-color: #0e9039; color: #FFF; cursor: pointer; height: 35px; line-height: 35px; position: absolute; right: 10px; text-align: center; top: 20px; transition: all 0.3s; width: 35px }
+	#sidebar #dismiss:hover { background: #FFF; color: #626262 }
+	#sidebar ul { margin: 0 }
+		#sidebar ul p { color: #626262; padding: 10px }
+		#sidebar ul li a { color: rgba(98,98,98, 0.5); display: block; font-size: 1.1em; padding: 10px; text-decoration: none !important }
+		#sidebar ul li a:hover { color: #626262 }
+		#sidebar ul li.active>a, #sidebar a[aria-expanded="true"] { background-color: #626262; color: #fff !important }
+	#sidebar ul ul a { background-color: #626262; color: #fff; font-size: 0.9em !important; padding-left: 30px !important }
+	#sidebar ul ul a:hover { background-color: rgba(255,255,255, 0.5) }
+	#sidebar a[data-toggle="collapse"] { position: relative }
+	#sidebar .dropdown-toggle::after { display: block; position: absolute; right: 20px; top: 50%; transform: translateY(-50%) }
+.overlay { background-color: rgba(0, 0, 0, 0.7); display: none; height: 100vh; opacity: 0; position: fixed; transition: all 0.5s ease-in-out; width: 100vw; z-index: 998 }
+	.overlay.active { display: block; opacity: 1 }
+
+/* inner */
+.inner-head-banner { background-size: cover; background-position: center; background-repeat: no-repeat; /*height: 495px;*/ height: 400px; margin: 0 40px; position: relative; }
+    .inner-head-banner h1 { color: #fff; font-size: 26px; font-weight: 300; text-align: center; /*background-color: rgba(0, 0, 0, 0.5);*/ text-transform: uppercase; padding: 40px 0; position: absolute; bottom: 0; width: 100%; margin: 0; letter-spacing: 0.1em;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+.team { background-image: url('/img/layout/team-banner-02.jpg'); }
+.commercial { background-image: url('/img/layout/commercial-banner.jpg'); }
+.individual { background-image: url('/img/layout/individual-banner.jpg'); }
+.historic { background-image: url('/img/layout/historic-banner-2.jpg'); }
+.concept { background-image: url('/img/layout/concept-banner.jpg'); }
+.testimonials { background-image: url('/img/layout/testimonial-inner-banner.jpg'); }
+.news { background-image: url('/img/layout/news-banner.jpg'); }
+.contact { background-image: url('/img/layout/contact-banner.jpg'); }
+    
+.card { border: none; }
+.card-columns { column-count: 2; }
+.card-body { background-color: #fff; color: #273239; border: 1px solid #e0e2e4 }
+.card-text a { color: #626262; }
+.card-text a:hover { color: #626262; }
+.card-header { background-color: #273239; font-size: 1.2rem; }
+.btn-primary:focus,.btn-primary:hover { background-color: #626262; border-color: #626262; box-shadow: none; outline: 0 }
+    .btn-primary{ color:#fff; background-color: #626262; border-color: #626262 }
+    #team { padding: 30px 0 }
+
+.grey-bg { background-color: #f0f2f3 }
+
+/*.inner-service { padding: 130px 100px }
+    .inner-service-sml { padding: 80px 90px; text-align: center }*/
+.inner-service { padding: 0 100px }
+    .inner-service-sml { padding: 0 90px; text-align: center }
+#service-inner img { padding-top: 30px; display: block }
+.service-grey-background { background-color: #d1d0d0; text-align: center; border-top: 30px solid #fff }
+    .service-grey-background h2 { font-size: 29px; text-transform: uppercase; margin-bottom: 20px; color: #2a2a2a; letter-spacing: 2px; }
+    .service-grey-background h3 { font-size: 22px; text-transform: uppercase; margin-bottom: 20px; color: #2a2a2a; letter-spacing: 2px; }
+    .service-grey-background p { font-size: 18px; line-height: 28px; }
+
+.service-background { border-top: 30px solid #fff; text-align: left!important }
+.service-dark-grey-background { background-color: #696969; border-top: 30px solid #fff; color: #fff }
+    .service-dark-grey-background h3 { font-size: 22px; text-transform: uppercase; margin-bottom: 20px; color: #fff; letter-spacing: 2px; }
+    .service-dark-grey-background p { font-size: 18px; line-height: 28px; }
+    
+#portfolio-inner { margin: 60px 100px 0 100px }
+    #portfolio-inner .item { margin-bottom: 30px }
+        #portfolio-inner .portfolio { position: relative; overflow: hidden; max-width: 100%; height: auto; text-align: center; }
+            #portfolio-inner .portfolio img { max-width: 100%; }
+            #portfolio-inner .portfolio .portfolio-img { display: block; }
+            #portfolio-inner .portfolio .portfolio-text { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); color: #fff;  -moz-transition: all 0.4s ease-in-out 0s; -webkit-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; transition: all 0.4s ease-in-out 0s }
+            #portfolio-inner .portfolio:hover .portfolio-text, .portfolio.active .portfolio-text { opacity: 1; }
+            #portfolio-inner .portfolio .portfolio-info { font-size: 22px; font-weight: 300; padding: 0 30px; text-transform: uppercase; width: 100% }
+            #portfolio-inner .portfolio .portfolio-info .btn-project { font-size: 14px; background-color: #fff; padding: 10px 20px; border: 1px #585757 solid; border-radius: 0; text-transform: uppercase; font-weight: 300; margin-top: 5px}
+                #portfolio-inner .portfolio .portfolio-info .btn-project:hover { color: #fff; background-color: #585757; border: 1px #585757 solid; }
+    #portfolio-inner #portfolio-controls { margin: 20px 0; text-align: center }
+        #portfolio-inner #portfolio-controls .btn { -moz-box-shadow: none !important; -webkit-box-shadow: none !important; border: none !important; box-shadow: none !important; font-size: 18px; font-weight: 300; outline: none !important; text-transform: uppercase }
+
+#portfolio-item h1 { font-size: 28px; margin: 0 0 20px 0 }
+#portfolio-item #portfolio-image { position: relative }
+    #portfolio-item #portfolio-image a { background-color: rgba(0, 0, 0, 0.25); color: rgba(255, 255, 255, 0.5); font-size: 100px; height: 100%; left: 0; position: absolute; top: 0; width: 100% }
+    #portfolio-item #portfolio-image a:hover {  color: rgba(255, 255, 255, 1) }
+
+.gallery-inner { padding: 50px 0; }
+    .card-columns { -moz-column-count: 4; -moz-column-gap: 30px; -webkit-column-count: 4; -webkit-column-gap: 30px; column-count: 4; column-gap: 30px }
+    .gallery-inner .card { border: 0px; margin-bottom: 30px; }
+    .info { margin-top: 30px }
+    .credit { text-transform: uppercase; }
+
+#testimonials { margin: 40px 0 }
+    #testimonials .card-columns { -moz-column-count: 2; -moz-column-gap: 30px; -webkit-column-count: 2; -webkit-column-gap: 30px; column-count: 2; column-gap: 30px }
+    #testimonials .card-body { border: 0!important; padding: 0px }
+    #testimonials .card-text { background-color: #585757; color: #fff; padding: 30px 30px 45px 30px; border-radius: 5px; }
+        #testimonials img { border-radius: 100px; border: 2px solid #fff; width: 110px; float: left; position: relative; bottom: 50px; left: 20px }
+        #testimonials .card-client { font-size: 15px; text-transform: uppercase; position: relative; bottom: 0px; padding-left: 140px; font-weight: 600; line-height: 20px; margin-bottom: 0 }
+        #testimonials .card-sub {  font-size: 15px; text-transform: uppercase; position: relative; bottom: 0px; padding-left: 140px; font-weight: 200; line-height: 20px; }
+    
+#news { margin: 60px 100px 0 100px }
+    #news .news-item { padding: 30px 0; border-bottom: 1px solid #e4e4e4 }
+        #news .news-item h2, #news .news-item h2 a { color: #272626; font-size: 32px; padding-top: 10px; font-weight: 600 }
+        #news .news-item p { font-size: 17px; line-height: 27px; }
+        #news .news-item .btn-read-news { font-size: 16px; background-color: #fff; padding: 10px 30px; border: 1px #585757 solid; border-radius: 0; text-transform: uppercase; font-weight: 300; margin-top: 5px}
+            #news .news-item .btn-read-news:hover { color: #fff; background-color: #585757; border: 1px #585757 solid; }
+#news .side-bar .latest-articles h4 { color: #272626; font-size: 32px; font-weight: 600; margin: 37px 0 10px 0 }
+    #news .side-bar .latest-articles p, #news .side-bar .latest-articles p a { font-size: 17px; color: #272626; margin-bottom: 10px }
+#news .side-bar h5 { color: #272626; font-size: 32px; padding-top: 10px; font-weight: 600 }
+#news .side-bar .btn-tag { margin-top: 4px }
+
+#news-inner { margin: 60px 100px 0 100px }
+    #news-inner img { margin-bottom: 20px }
+    #news-inner h2 { color: #272626; font-size: 32px; padding-bottom: 10px; font-weight: 600 }
+    #news-inner p { color: #272626; font-size: 17px; line-height: 27px; padding-top: 10px }
+    #news-inner .btn-group { float: right }
+        #news-inner .btn-group a { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; font-size: 18px; text-transform: uppercase; padding: 7px 10px 5px 10px }
+    #news-inner .embeded-video{ margin-top: 30px }
+
+#news-pages { margin-top: 30px }
+    #news-pages .pagination { justify-content: center }
+    #news-pages li a { -moz-border-radius: 0; -webkit-border-radius: 0; border-color: #A9A8A8; border-radius: 0; color: #626262 }
+    #news-pages li a:hover, #news-pages li.active a { background-color: #0E9039; color: #FFF }
+    #news-pages li.disabled a { background-color: #F0F0F0 }
+
+
+#contact .grey-bg { padding: 80px 0 }
+    #contact .name { text-transform: uppercase; font-weight: 600; font-size: 17px }
+    #contact .strap  { font-size: 18px }
+    #contact p  { display: block; float: left }
+        #contact address { display: inline-block; padding-left: 10px }
+    #contact a { color: #626262; padding-left: 10px }
+    #contact .social i { font-size: 23px; margin: 5px 0; display: inline-block; }
+        #contact .social i.fa-facebook-f { color: #4f5089!important }
+        #contact .social i.fa-linkedin-in { color: #2867B2!important }
+        #contact .social i.fa-houzz { color: #4DBC15 !important }
+        #contact .social i.fa-instagram { color: #833AB4 !important }
+        #contact .social i.fa-pinterest { color: #BD081C !important }
+
+#contact-map { border: none; height: 350px; width: 100% }
+
+.flip-card { background-color: transparent; height: 565px; margin-bottom: 30px; perspective: 1000px; width: 100% }
+.flip-card-inner { height: 100%; position: relative; text-align: center; transform-style: preserve-3d; transition: transform 0.6s; width: 100% }
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg) }
+.flip-card-front, .flip-card-back { -webkit-backface-visibility: hidden; backface-visibility: hidden; height: 100%; position: absolute; width: 100% }
+.flip-card-front { background-color: #FFF; border: 1px solid #DEE0E2; padding: 30px; height: 100% }
+    .flip-card-front h4 { color: #373737; font-size: 20px; margin: 0; text-transform: uppercase; width: 100% }
+    .flip-card-front p { color: #797979; font-size: 16px; font-style: italic; margin: -20px 0 0 0; width: 100% }
+.flip-card-back { background-color: #797979; color: #FFF; padding: 30px; transform: rotateY(180deg) }
+    .flip-card-back p { font-size: 16px; font-weight: 300; margin-bottom: 20px }
+    .flip-card-back .team-links a { color: #FFF; font-size: 18px }
+
+@media (max-width: 1590px) {
+    /* global */
+    .home-carousel .carousel-inner img { height: 700px !important; }
+    #testimonial-carousel { height: 500px; margin: 40px 0 }
+    #testimonial-carousel .carousel-caption { top: 25%  }
+    #portfolio .portfolio .portfolio-info { font-size: 18px }
+    #portfolio-inner .portfolio .portfolio-info { font-size: 18px }
+}
+
+@media (max-width: 1199px) {
+    /* global */
+    .card-columns { -moz-column-count: 3; -webkit-column-count: 3; column-count: 3 }
+    header .navbar .navbar-nav li { font-size: 14px }
+    header .navbar .navbar-nav li a.dropdown-item { font-size: 14px !important }
+    .home-carousel .carousel-inner img { height: 650px !important; }
+    h2 { font-size: 19px; }
+    .dark-grey-background p { line-height: 25px; }
+    .home-service { padding: 80px 70px }
+    .light-grey-background h3 { font-size: 30px; margin-bottom: 40px }
+    .light-grey-background p { font-size: 17px; line-height: 28px; }
+    .concept-grey-background { padding: 50px }
+        .concept-grey-background h4 { font-size: 28px; padding-bottom: 30px; }
+        .concept-grey-background img { padding-bottom: 30px; }
+        .concept-grey-background p.strap { font-size: 25px; }
+        .concept-grey-background a.btn-more { font-size: 16px; }
+    #testimonial-carousel { height: 450px; margin: 40px 0 }
+        #testimonial-carousel .carousel-caption { top: 20%  }
+    .inner-head-banner { height: 300px; }
+    /*.inner-service { padding: 70px }
+        .inner-service-sml { padding: 70px }*/
+    .inner-service { padding: 0 70px }
+        .inner-service-sml { padding: 0 70px }
+            .service-grey-background h2 { font-size: 25px; margin-bottom: 10px; letter-spacing: 1px; padding: 20px }
+            .service-grey-background h3 { font-size: 20px;; }
+            .service-grey-background p { font-size: 18px; line-height: 28px; }
+    #portfolio .portfolio .portfolio-info { font-size: 16px; padding: 0 15px }
+        #portfolio .portfolio .portfolio-info p { margin-bottom: 5px }
+        #portfolio .portfolio .portfolio-info .btn-project { font-size: 13px }
+    #portfolio-inner .portfolio .portfolio-info { font-size: 16px; padding: 0 15px }
+        #portfolio-inner .portfolio .portfolio-info p { margin-bottom: 5px }
+        #portfolio-inner .portfolio .portfolio-info .btn-project { font-size: 13px }
+    #testimonial-carousel { background-attachment: scroll }
+    .flip-card { height: 500px }
+    .flip-card-back p { font-size: 14px }
+    footer #footer-logos { padding-top: 30px }
+        footer #footer-logos #footer-logos-left { text-align: left }
+}
+
+@media (max-width: 991px) {
+    /* global */
+    #header-social { margin-top: 15px }
+    .navbar-light .navbar-toggler { border-radius: 0; margin-left: 20px; padding-left: 5px; padding-right: 5px }
+    .home-carousel .carousel-inner img { height: 450px !important; }
+    .home-carousel .carousel-caption { height: 85px;}
+        .home-carousel .carousel-caption h3 { font-size: 20px; margin-top: 10px  }
+        .home-carousel .carousel-caption a.btn-view-project { font-size: 13px; padding: 5px 15px; margin-top: 5px; }
+    .dark-grey-background { padding: 50px 0 40px 0; }
+        .dark-grey-background img { margin-top: 20px }
+        .dark-grey-background a { font-size: 30px; color: #fff; font-weight: 300; line-height: 70px; }
+    .home-service { padding: 60px 50px }
+    .light-grey-background h3 { font-size: 28px; margin-bottom: 30px }
+    .light-grey-background p { font-size: 16px; }
+    .light-grey-background a.btn-more { font-size: 16px; padding: 10px 20px; margin-top: 30px}
+        .concept-grey-background h4 { font-size: 24px; padding-bottom: 25px; }
+        .concept-grey-background p.strap { font-size: 25px; }
+        .concept-grey-background a.btn-more { font-size: 16px; }
+    #testimonial-carousel { height: 350px; margin: 40px 0 }
+        #testimonial-carousel .carousel-caption { top: 15%  }
+            #testimonial-carousel .carousel-caption .testimonial-text { font-size: 20px; line-height: 30px;  }
+            #testimonial-carousel .carousel-caption .testimonial-author { font-size: 18px; line-height: 28px; }
+    footer { text-align: center; }
+        footer p { margin-top: 20px }
+        footer #footer-logo { width: 40% }
+    .copyright-strap { text-align: center }
+    .copyright-strap .right { text-align: center }
+    #testimonials .card-columns { -moz-column-count: 1; -moz-column-gap: 0; -webkit-column-count: 1; -webkit-column-gap: 0; column-count: 1; column-gap: 0 }
+    #news { margin: 40px 30px 0 30px }
+    #news-inner { margin: 40px 30px 0 30px }
+    #footer-labc { padding-bottom: 30px }
+    #footer-investors { padding: 0 15px }
+    #footer-ciob { padding: 0 15px }
+    #portfolio .portfolio .portfolio-info { font-size: 18px; padding: 0 30px }
+        #portfolio .portfolio .portfolio-info p { margin-bottom: 15px }
+        #portfolio .portfolio .portfolio-info .btn-project { font-size: 14px }
+    #portfolio-inner .portfolio .portfolio-info { font-size: 18px; padding: 0 30px }
+        #portfolio-inner .portfolio .portfolio-info p { margin-bottom: 15px }
+        #portfolio-inner .portfolio .portfolio-info .btn-project { font-size: 14px }
+    .flip-card { height: 540px }
+}
+
+@media (max-width: 767px) {
+    /* global */
+    header { text-align: center }
+        header .navbar-brand { padding: 0 15% 20px 15% }
+        header #header-social { margin-top: 10px; text-align: center; }
+        .navbar-light .navbar-toggler { position: relative; top: -2px }
+    .home-carousel .carousel-inner img { height: 450px !important; }
+    .home-carousel .carousel-caption { height: 85px;}
+        .home-carousel .carousel-caption h3 { font-size: 18px; margin-top: 0px  }
+    .owl-carousel { padding: 0 }
+    .inner-head-banner { height: 250px; }
+    .card-columns { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2 }
+    #news-inner .btn-group { float: none }
+    .flip-card { height: 500px }
+    .flip-card-front img { width: 272px }
+    .flip-card-front h4 { margin-top: 10px  }
+    .flip-card-front p { margin: 0 }
+    .inner-head-banner { margin: 0 20px }
+    #news { margin: 40px 20px 0 20px }
+    footer #footer-logos-left { text-align: center !important }
+    footer #footer-logos-right { text-align: center !important }
+
+    .inner-service-sml { padding: 40px 40px 25px 40px }
+}
+
+@media (max-width: 575px) {
+    /* global */
+    header .navbar-brand { padding: 0 10% 20px 10% }
+    section { margin: 0 20px }
+    .home-service { padding: 30px 20px }
+    .home-carousel .carousel-inner img { height: 300px !important; }
+    .home-carousel .carousel-caption { display: none }
+    .concept-grey-background { padding: 30px; text-align: center; }
+    #testimonial-carousel { display: none }
+    #footer-investors { padding: 0 0 30px 0 }
+    #footer-ciob { padding: 0 0 30px 0 }
+    .card-columns { -moz-column-count: 1; -moz-column-gap: 0; -webkit-column-count: 1; -webkit-column-gap: 0; column-count: 1; column-gap: 0 }
+    #portfolio-inner { margin: 30px 15px 0 15px }
+    footer #footer-logos #footer-labc-02 { margin-bottom: 15px }
+    #portfolio-item #portfolio-image a { font-size: 65px }
+}
+
+@media (max-width: 374px) {
+	/* global */
+    .navbar-brand { padding-top: 33px; }
+    .home-carousel .carousel-inner img { height: 200px !important; }
+    #portfolio .portfolio .portfolio-info { font-size: 16px; padding: 0 15px }
+        #portfolio .portfolio .portfolio-info p { margin-bottom: 5px }
+        #portfolio .portfolio .portfolio-info .btn-project { font-size: 13px }
+    #portfolio-inner .portfolio .portfolio-info { font-size: 16px; padding: 0 15px }
+        #portfolio-inner .portfolio .portfolio-info p { margin-bottom: 5px }
+        #portfolio-inner .portfolio .portfolio-info .btn-project { font-size: 13px }
+    .flip-card-front img { padding-top: 15%; width: 100% }
+}
