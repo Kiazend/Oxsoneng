@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    width: 100%;
+ }
+ .nav{
+    display: inline-flex;
+    width: 100%;
+    height: 84px;
+    /* justify-content: space-around; horizontal positioning */
+    /* align-items: center; vertical positioning */
+ }
+ .nav-logo{
+    width: 12%;
+    /* height: 78px; */
+    
+ }
+
+ .nav-items{
+    position: relative;
+  
+    
+  width: 100%;
+  padding: 0 10px;
+ }
