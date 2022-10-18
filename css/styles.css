@@ -1,24 +1,91 @@
+:root{
+    --grey:#808080;
+    --white:white;
+    --black:black;
+    --heroBannerTop:62.2vh;
+    --heroBannerLeft:15.3vw;
+}
+
 *{
     margin: 0;
     width: 100%;
  }
+ body{
+    overflow-x: hidden;
+ }
  .nav{
-    display: inline-flex;
-    width: 100%;
-    height: 84px;
-    /* justify-content: space-around; horizontal positioning */
-    /* align-items: center; vertical positioning */
+    display: flex;
+    width: 100vw;
+    height: 15.5vh;
+    align-items: center;
+    z-index: 10;
  }
  .nav-logo{
-    width: 12%;
-    /* height: 78px; */
+    width: 12vw;
+    height: 15.5vh;
+    position: relative;
+    left: 11.4vw;
+    top: 0.5vh;
     
  }
 
  .nav-items{
+    width: 35.93vw;
     position: relative;
-  
-    
-  width: 100%;
-  padding: 0 10px;
+    left: 43.020vw;
+    top: 1.2vh;
+   
+
+ }
+
+ .nav-item{
+    margin: 0 1.5vw 0 0;
+    overflow-x: visible;
+    text-align: center;
+
+ }
+
+ .landing-hero{
+    width: 100vw;
+    height: 100vh;
+ }
+ .landing-hero-banner>img{
+    width: 95vw;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 3px;
+    z-index: 0;
+ }
+ .landing-hero-banner{
+    text-align: center;
+    overflow-y: hidden;
+ }
+ .landing-banner>img{
+    width: 11.2vw;
+    height: auto;
+    position: absolute;
+    top: var(--heroBannerTop);
+    left: 2vw;
+ }
+ .landing-banner{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 90vh;
+    width: 40vw;
+    z-index: 1;
+    top: 15.5vh;
+    left: 2.5vw;
+ }
+ .landing-text{
+  color: white;
+  position: absolute;
+  top: var(--heroBannerTop);
+  left: var(--heroBannerLeft);
+  z-index: 10;
+  width: 22vw;
+  height: auto;
+  text-align: left;
+  border-left: 6px solid white;
+  padding-left: 10px;
+
  }

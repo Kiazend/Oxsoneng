@@ -1,4 +1,15 @@
-.nav-items{
-    font-size: large;
+:root{
+    --grey:#808080;
+    --white:white;
+    --black:black;
+}
+
+
+.nav-items>a{
+    font-size: medium;
     text-decoration: none;
+    color: var(--black);
+}
+.nav-items>a:hover{
+    color: var(--grey);
 }
