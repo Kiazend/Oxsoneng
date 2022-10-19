@@ -98,7 +98,7 @@
     text-align: center;
  }
  .about-cards{
-   margin: 2rem;
+   margin: 12vh 3vw;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -138,20 +138,25 @@
 
  }
  .certification-category{
-   width: 10%;
+   /* width: 10%;
+   column-span: 1; */
  }
  .about-table{
-   width: 35vw;
+   width: 40vw;
    position: relative;
-   right: 10vw;
+   right: 3vw;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
  }
-
+.certification-details{
+   /* column-span: 3; */
+}
  .certification-details>ul {
-   list-style: armenian;
+   list-style: disc;
+   
  }
  
  .about-table tr{
-   border-bottom: 3px solid var(--grey);
+   /* border-bottom : 3px solid var(--grey); */
  }
 
  /* MISSION SECTION */
@@ -161,7 +166,7 @@ text-align: center;
  }
  .mission-hero>p{
    text-align: center;
-   
+   position: relative;
  }
  .mission-cards{
    display: flex;
