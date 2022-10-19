@@ -1,3 +1,4 @@
+/* ROOT */
 :root{
     --grey:#808080;
     --white:white;
@@ -5,7 +6,7 @@
     --heroBannerTop:62.2vh;
     --heroBannerLeft:15.3vw;
 }
-
+/* GENERAL */
 *{
     margin: 0;
     width: 100%;
@@ -13,6 +14,8 @@
  body{
     overflow-x: hidden;
  }
+
+ /* NAVBAR */
  .nav{
     display: flex;
     width: 100vw;
@@ -45,6 +48,7 @@
 
  }
 
+ /* LANDING SECTION */
  .landing-hero{
     width: 100vw;
     height: 100vh;
@@ -88,4 +92,51 @@
   border-left: 6px solid white;
   padding-left: 10px;
 
+ }
+/* ABOUT SECTION */
+ .about-hero>h1{
+    text-align: center;
+ }
+ .about-cards{
+   margin: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+ }
+ .about-pic{
+   width: 35vw;
+   
+
+ }
+ .about-pic>img{
+   width: 13.802vw;
+   height: auto;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+ .about-text{
+   width: 35vw;
+ }
+ #oxson-clients{
+   display: flex;
+   flex-flow: row wrap;
+   width: 45vw;
+   align-content: center;
+   justify-content: center;
+ }
+ .oxson-client{
+   width:9.1vw ;
+   height: 15.4vh;
+   object-fit: cover;
+   margin: 10px 5px;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+ .oxson-client>img{
+   width:9.1vw ;
+   height: 15.4vh;
+
+ }
+ .about-table{
+   width: 35vw;
+   float: left;
  }
