@@ -19,7 +19,7 @@
  .nav{
     display: flex;
     width: 100vw;
-    height: 15.5vh;
+    height: 16.5vh;
     align-items: center;
     z-index: 10;
  }
@@ -77,7 +77,7 @@
     height: 90vh;
     width: 40vw;
     z-index: 1;
-    top: 15.5vh;
+    top: 16.5vh;
     left: 2.5vw;
  }
  .landing-text{
@@ -125,18 +125,61 @@
    justify-content: center;
  }
  .oxson-client{
+   
    width:9.1vw ;
-   height: 15.4vh;
+   height: 17vh;
    object-fit: cover;
    margin: 10px 5px;
    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
  }
  .oxson-client>img{
    width:9.1vw ;
-   height: 15.4vh;
+   height: 17vh;
 
+ }
+ .certification-category{
+   width: 10%;
  }
  .about-table{
    width: 35vw;
-   float: left;
+   position: relative;
+   right: 10vw;
+ }
+
+ .certification-details>ul {
+   list-style: armenian;
+ }
+ 
+ .about-table tr{
+   border-bottom: 3px solid var(--grey);
+ }
+
+ /* MISSION SECTION */
+ 
+ .mission-hero>h1{
+text-align: center;
+ }
+ .mission-hero>p{
+   text-align: center;
+   
+ }
+ .mission-cards{
+   display: flex;
+   width: 100vw;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+   margin: 3vh;
+   padding: 0 4vw;
+}
+ .mission-card{
+   width: 100vw;
+   display: flex;
+  
+ }
+ 
+ .mission-card-black{
+   color: white;
+   background-color: rgb(33, 33, 33);
  }
