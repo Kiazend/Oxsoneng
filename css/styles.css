@@ -247,6 +247,9 @@ margin-top: 15vh;
   position: relative;
   left: 8vw;
 }
+.portfolio-main{
+  margin: 5vh 0 8vh;
+}
 .portfolio-pics{
   display: flex;
   justify-content: center;
@@ -264,4 +267,34 @@ margin-top: 15vh;
   border-radius: 5px;
   box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+footer{
+  color: white;
+  background-color: black;
+  width: 100vw;
+  
+  
+}
+.footer-main{
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer-offices, .footer-legals, .footer-contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-office, .footer-sm-links, .footer-inquiry, .footer-contact, .footer-engage, .footer-copyright, .footer-legal , .footer-kiazend{
+  width: 30%;
+}
+
+
+
+
 
