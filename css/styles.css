@@ -128,13 +128,14 @@
    
    width:9.1vw ;
    height: 17vh;
-   object-fit: cover;
    margin: 10px 5px;
    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
  }
  .oxson-client>img{
    width:9.1vw ;
    height: 17vh;
+   
+   object-fit: contain;
 
  }
  .certification-category{
@@ -163,10 +164,15 @@
  
  .mission-hero>h1{
 text-align: center;
+margin-top: 15vh;
  }
- .mission-hero>p{
+ .mission-hero>p, .services-hero>h1, .portfolio-main>h2{
+  /* color: blue; */
    text-align: center;
+   width: 60vw;
    position: relative;
+   left: 20vw;
+   margin: 8vh 0;
  }
  .mission-cards{
    display: flex;
@@ -175,16 +181,87 @@ text-align: center;
    justify-content: center;
    text-align: center;
    flex-wrap: wrap;
-   margin: 3vh;
+ 
    padding: 0 4vw;
 }
- .mission-card{
+ .mission-card {
    width: 100vw;
    display: flex;
-  
- }
+   align-items: center;
+   justify-content: center;
+   padding: 20px 0;
+   margin: 6vh 0;
+   position: relative;
+   left: 10vw;
+   border-radius: 5px;
+  }
+  .mission-card-pic>img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
  
  .mission-card-black{
    color: white;
    background-color: rgb(33, 33, 33);
+   box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
  }
+
+.mission-card-text>p, .mission-card-pic{
+  position: relative;
+  right: 10vw; 
+} 
+.services-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8vh 0;
+}
+
+.services-pics>img{
+  width: 40vw;
+  height: 48.5vh;
+  position: relative;
+  object-fit: cover;
+  left: 8vw;
+  border-radius: 5px;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.services-card-text{
+  width: 30vw;
+  position: relative;
+  right: 8vw;
+}
+.services-pics-odd>img{
+  width: 40vw;
+  height: 48.5vh;
+  position: relative;
+  object-fit: cover;
+  left: 30vw;
+  border-radius: 5px;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.services-card-text-odd{
+  width: 30vw;
+  position: relative;
+  left: 8vw;
+}
+.portfolio-pics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  flex-wrap: wrap;
+  position: relative;
+  left: 5vw;
+}
+.portfolio-pics>img{
+  margin: 10px;
+  width: 27.6vw;
+  height: 32.4vh;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
