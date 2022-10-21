@@ -1,3 +1,4 @@
+
 /* ROOT */
 :root{
     --grey:#808080;
@@ -7,6 +8,9 @@
     --heroBannerLeft:15.3vw;
 }
 /* GENERAL */
+html{
+  scroll-behavior: smooth;
+}
 *{
     margin: 0;
     width: 100%;
@@ -174,6 +178,7 @@ margin-top: 15vh;
    left: 20vw;
    margin: 8vh 0;
  }
+
  .mission-cards{
    display: flex;
    width: 100vw;
@@ -193,13 +198,14 @@ margin-top: 15vh;
    margin: 6vh 0;
    position: relative;
    left: 10vw;
-   border-radius: 5px;
+   border-radius: 40px 0 0 40px;
   }
   .mission-card-pic>img{
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 100%;
+    margin-top: 1vh;
   }
  
  .mission-card-black{
@@ -248,7 +254,7 @@ margin-top: 15vh;
   left: 8vw;
 }
 .portfolio-main{
-  margin: 5vh 0 8vh;
+  margin: 18vh 0 8vh;
 }
 .portfolio-pics{
   display: flex;
@@ -272,14 +278,14 @@ footer{
   color: white;
   background-color: black;
   width: 100vw;
-  
+  height: 80vh;
   
 }
 .footer-main{
   padding: 20px 10px;
   justify-content: center;
   align-items: center;
-  
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -287,11 +293,24 @@ footer{
 
 .footer-offices, .footer-legals, .footer-contacts{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 8vh 0;
 }
 .footer-office, .footer-sm-links, .footer-inquiry, .footer-contact, .footer-engage, .footer-copyright, .footer-legal , .footer-kiazend{
   width: 30%;
+  padding: 0 6vw;
+}
+.footer-legal{
+  visibility: hidden;
+}
+.footer-sm-links>a>img{
+  width: 50px;
+  object-fit: contain;
+  height: 50px;
+}
+.footer-sm-links>a>img:hover{
+  width: 60px;
+  object-fit: contain;
+  height: 60px;
 }
 
 

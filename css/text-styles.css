@@ -1,15 +1,59 @@
 :root{
+    font-size: 18px;
     --grey:#808080;
     --white:white;
     --black:black;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    font-family: "PT Serif",serif;
+}
 
 .nav-items>a{
-    font-size: medium;
+    font-size: large;
     text-decoration: none;
     color: var(--black);
 }
 .nav-items>a:hover{
     color: var(--grey);
 }
+
+p{
+    font-size: 1rem;
+}
+
+#landing-banner-text{
+    font-size: 1.5rem;
+}
+
+.mission-hero>p, .mission-card-text{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.services-card-text-odd>h2, .services-card-text>h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .services-card-text-odd>p, .services-card-text>p{
+    margin-top: 10px;
+  }
+
+.portfolio-main>h2{
+    font-weight: 800;
+}
+
+footer h1, footer h3{
+    font-weight: 800;
+  }
+  .footer-main a{
+    font-weight: 100;
+    color: white;
+    text-decoration: underline;
+  }
+  .footer-main a:hover{
+    color: grey;
+  }
+  
