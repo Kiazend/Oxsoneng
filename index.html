@@ -7,41 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\styles.css">
     <link rel="stylesheet" href="css\text-styles.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/59fa5fa8f1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
     <title>Oxson Engineering</title>
+    <link rel="shortcut icon" href="assets\oxson_logos\oxson_favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-
-    <div class="nav">
-        <img class="nav-logo" src="assets\oxson_logos\color_jpeg.jpg" alt="Oxson Engineering Pvt. Ltd.">
-        <div class="nav-items">
-            <a class="nav-item" href="#home">HOME</a>
-            <a class="nav-item" href="#about">ABOUT</a>
-            <a class="nav-item" href="#services">SERVICES</a>
-            <a class="nav-item" href="#portfolio">PORTFOLIO</a>
-            <a class="nav-item" href="#contact">CONTACT</a>
-        </div>
-
-    </div> <!-- NAV ENGING TAGS -->
-
     <div class="main">
+        <div class="nav">
+            <a class="nav-logo" href="#home"> <img src="assets\oxson_logos\color_jpeg.jpg"
+                    alt="Oxson Engineering Pvt. Ltd."></a>
 
-        <div class="landing-hero">
-            <img src="" alt="">
-            <div class="landing-banner-hero">
+            <div class="nav-items">
+                <a id="hamburger"  ><img src="assets\oxson_logos\navbar_icon.png" alt="navbar_hamburger_icon" style="width:25px ; height:25px;"></a>
+                <a id="cross" ><img src="assets\oxson_logos\cross_icon.png" alt="navbar_cross_icon" style="width:25px ; height:25px;"></a>
+
+                <a class="nav-item hide"  href="#home">HOME</a>
+                <a class="nav-item hide" href="#about">ABOUT</a>
+                <a class="nav-item hide" href="#services">SERVICES</a>
+                <a class="nav-item hide" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-item hide" href="#contact">CONTACT</a>
+            </div>
+
+
+        </div> <!-- NAV ENGING TAGS -->
+
+        <div id="home" class="landing-hero">
+
+            <div class="landing-hero-banner">
+                <img src="assets\oxson_pics_edited\oxson_main.jpg" alt="Oxson plaza construction">
                 <div class="landing-banner">
+                    <img src="assets\oxson_logos\white_png.png" alt="oxson_logo_white">
                     <div class="landing-text">
-                        <img src="" alt="">
-                        <h1>YEARS OF PROFESSIONAL EXCELLENCE AND STILL COUNTING</h1>
+
+                        <h3 id="landing-banner-text">YEARS OF PROFESSIONAL EXCELLENCE AND STILL COUNTING</h3>
 
                     </div>
                 </div>
@@ -50,12 +56,13 @@
         </div> <!-- LANDING ENGING TAGS -->
 
 
-        <div class="about-hero">
+        <div id="about" class="about-hero">
             <h1>WHERE CREDIBILITY COMES FIRST</h1>
 
             <div class="about-cards certificate">
                 <div class="about-pic">
-                    <img src="" alt="Oxson PEC certificate">
+                    <img src="assets\oxson_pics_edited\oxson_certificates\oxson_certificate.png"
+                        alt="Oxson PEC certificate">
                 </div>
                 <div class="about-text">
                     <p>We are a registered firm under Construction and Operation of Engineering Works
@@ -63,11 +70,11 @@
                         SOPs and regulatory procedures of the aforementioned body. The license was
                         issues under C4 category with License No: 13937 and Fields of specialization
                         as follows:
-                    </p><br><br>
-                    <p>CE01 - CE04 (Irrigation Only), CE08, CE09, CE10, EE01 - EE04, EE06, EE07,
+                    <br>CE01 - CE04 (Irrigation Only), CE08, CE09, CE10, EE01 - EE04, EE06, EE07,
                         EE08, EE10, EE11 (Solar), EE11 (General Electrical Works).
-                    </p><br><br>
-                    <a href="">SEE LICENSE PDF</a>
+                    </p>
+                    <a href="assets\oxson_pics_edited\oxson_certificates\oxson_certificate_complete.jpg"
+                        target="_blank">SEE LICENSE PDF</a>
 
                 </div>
             </div>
@@ -80,7 +87,7 @@
                         including
                         but not limited to:
 
-                    </p><br><br>
+                    </p>
                     <ol>
                         <li>C&W Department</li>
                         <li>Lahore Development Authority (LDA)
@@ -89,36 +96,111 @@
                         <li>MES Navy</li>
                         <li> Private Housing and Societies
                         </li>
-                    </ol>
+                    </ol><br>
 
-                    <a href="">SEE FULL CLIENT LIST</a>
+                    <a href="" target="_blank" style="visibility: hidden;">SEE FULL CLIENT LIST</a>
 
                 </div>
-                <div class="about-pic">
-                    <img src="" alt="Oxson clients">
+                <div id="oxson-clients" class="about-pic">
+                    <a class="oxson-client" href="https://dhalahore.org/" target="_blank"><img
+                            src="assets\oxson_clientage\dha_lahore.png" alt="Defence Housing AUthority. Lahore"></a>
+                    <a class="oxson-client" href="https://mda.punjab.gov.pk/" target="_blank"><img
+                            src="assets\oxson_clientage\MDA.jfif" alt="Multan Development Authority"></a>
+                    <a class="oxson-client" href="https://www.punjab.gov.pk/communication_works" target="_blank"><img
+                            src="assets\oxson_clientage\C&W.png" alt="Communication and Works Department, Punjab"></a>
+                    <a class="oxson-client" href="https://lda.gop.pk/website/" target="_blank"><img
+                            src="assets\oxson_clientage\lda.png" alt="Lahore Development Authority"></a>
+                    <a class="oxson-client" href="http://www.pcsir.gov.pk/" target="_blank"><img
+                            src="assets\oxson_clientage\PCSIR.png"
+                            alt="Pakistan Council of Scientific and Industrial Research"></a>
+                    <a class="oxson-client" href="https://nha.gov.pk/" target="_blank"><img
+                            src="assets\oxson_clientage\NHA.jfif" alt="National Highways Authority"></a>
+                    <a class="oxson-client" href="https://bahriatown.com/" target="_blank"><img
+                            src="assets\oxson_clientage\bahria_town.jpeg" alt="Bahria Town, Lahore"></a>
+                    <a class="oxson-client"
+                        href="https://www.ppra.org.pk/dad_org.asp?orgid=560&orgname=Military%20Engineering%20Services%20(Navy)"
+                        target="_blank"><img src="assets\oxson_clientage\navy.png"
+                            alt="Military Engineering Services, Navy"></a>
                 </div>
             </div>
 
 
             <div class="about-cards certifications">
                 <div class="about-table">
-                    <table>
-                        <th>Oxson Engineering certifications</th>
-                        <tr>
-                            <td>CE-04</td>
-                            <td>Sewerage Works</td>
+                    <table class="certification-table">
+
+
+                        <th style="text-align:center ; background-color:rgb(173, 173, 173);" colspan="2">Oxson
+                            Engineering Specializations</th>
+                        <tr style="border-bottom:2px dashed grey;">
+                            <th class="certification-category">Specifications</th>
+                            <th class="certification-details">Certification Code</th>
                         </tr>
+
+
+
+
+                        <!-- <tr>
+                                
+                                <td class="certification-details">
+                                    <ul>
+                                        <li>Marine Structures</li>
+                                        <li>Dredging</li>
+                                        <li>Underwater works</li>
+                                    </ul>
+                                </td>
+                                <td class="certification-category">CE-03</td>
+                            </tr>
+                            <tr>
+                                
+                                <td class="certification-details">
+                                    <ul>
+                                        <li>Dams/Water retaining structures</li>
+                                        <li>Irrigation and flood control systems</li>
+
+                                    </ul>
+                                </td>
+                                <td class="certification-category">CE-04</td>
+                            </tr>-->
+                        <tr style="border-bottom:2px dashed grey;">
+
+                            <td class="certification-details">
+                                <ul>
+                                    <li>Sewerage Works</li>
+                                    <li>Water Supply</li>
+                                </ul>
+                            </td>
+                            <td class="certification-category">CE-09</td>
+                        </tr>
+                        <tr>
+
+                            <td class="certification-details">
+                                <ul>
+                                    <li>General Civil Engineering Works</li>
+                                    <li>Concrete Repairs</li>
+                                    <li>Soil Investigation and Stabilization</li>
+                                    <li>Landscaping and Horticulture</li>
+                                    <li>Reclamation Works</li>
+                                    <li>General Buildings and Maintenance</li>
+                                    <li>Water Proofing</li>
+                                </ul>
+                            </td>
+                            <td class="certification-category">CE-10</td>
+                        </tr>
+
                     </table>
                 </div>
+
+
                 <div class="about-text">
-                    <p>We have vast expertise in CE09 and CE10 code as per PEC (Pakistan Engineering Council). This
-                        includes
+                    <p>We have vast expertise in CE09 and CE10 as per PEC (Pakistan Engineering Council) certification
+                        code. This
+                        includes:
                     </p>
                     <ol>
-                        <li>Sewerage Works (CE-09)</li>
-                        <li>Water Supply (CE09)</li>
-                        <li>General Civil Engineering Works (CE10)
-                        </li>
+                        <li>Sewerage Works</li>
+                        <li>Water Supply</li>
+                        <li>General Civil Engineering Works</li>
                         <li>Concrete Repairs</li>
                         <li>Soil investigation and Stabilization</li>
                         <li>Landscaping and Horticulture</li>
@@ -126,67 +208,74 @@
                         <li>General Buildings and Maintenance</li>
                         <li>Water Proofing</li>
                     </ol>
-                    <a href="">SEE FULL CATEGORY LIST</a>
+                    <a href="Oxson_certifications_complete.html" target="_blank">SEE FULL CERTIFICATION TABLE</a>
 
                 </div>
 
 
 
             </div>
-
+            <!-- Portfolio END -->
+            <!-- MISSION VISION START -->
 
             <div class="mission-hero">
                 <h1>OUR MISSION</h1>
-                <p>OXSON ENGINEERING is a leader in providing value-added construction services to our customers by
+                <p>"OXSON ENGINEERING is a leader in providing value-added construction services to our customers by
                     creating a successful partnership with them throughout the construction process. Our pledge is
                     to establish lasting relationships with our customers by exceeding their expectations and
-                    gaining their trust through exceptional performance by every member of the construction team.
+                    gaining their trust through exceptional performance by every member of the construction team."
                 </p>
 
                 <div class="mission-cards">
 
-                    <div class="mission-card-pic mission-card-black">
-                        <img src="" alt="Mr. Imran Khan CEO, Oxson">
-                        <p>Mr. Imran Khan</p><br>
-                        <p>CEO, Oxson Engineering</p>
+                    <div class="mission-card  mission-card-black">
+
+                        <div class="mission-card-pic">
+                            <img src="assets\mission_statements\mr_imran.jpeg" alt="Mr. Imran Khan CEO, Oxson">
+                            <p>Mr. Imran Khan <br>
+                            CEO, Oxson Engineering</p>
+                        </div>
+
+                        <div class="mission-card-text black-card-text">
+                            <p>"To be the preeminent provider of superior construction services by consistently
+                                improving
+                                the quality of our product; to add value for clients through innovation, foresight,
+                                integrity, and aggressive performance; and to serve with character and purpose that
+                                brings honor to God."</p>
+                        </div>
                     </div>
 
-                    <div class="mission-card-text black-card-text">
-                        <p>To be the preeminent provider of superior construction services by consistently improving
-                            the quality of our product; to add value for clients through innovation, foresight,
-                            integrity, and aggressive performance; and to serve with character and purpose that
-                            brings honor to God.</p>
-                    </div>
-                </div>
 
-
-                <div class="missio-cards">
-                    <div class="mission-card-text">
-                        <p>To provide exceptional services to the insurance industry and thier clients, the property
-                            owner. We are committed to providing the highest level of professionalism, service
-                            response,
-                            and quality workmanship.</p>
-                    </div>
-                    <div class="mission-card-pic mission-card-black">
-                        <img src="" alt="Mr. Imran Khan CEO, Oxson">
-                        <p>Mr. Wajid</p><br>
-                        <p>Managing partner, Oxson Engineering</p>
-                    </div>
-                </div>
-
-
-                <div class="mission-cards mission-card-black">
-
-                    <div class="mission-card-pic">
-                        <img src="" alt="Mr. Imran Khan CEO, Oxson">
-                        <p>Mr. Adnaan</p><br>
-                        <p>Director, Oxson Engineering</p>
+                    <div id="mission-card-white" class="mission-card">
+                        <div class="mission-card-text">
+                            <p>"To provide exceptional services to the insurance industry and thier clients, the
+                                property
+                                owner. We are committed to providing the highest level of professionalism, service
+                                response, and quality workmanship."</p>
+                        </div>
+                        <div class="mission-card-pic ">
+                            <img src="assets\mission_statements\mr_wajid.jpeg"
+                                alt="Mr. Wajid Managing partner, Oxson Engineering">
+                            <p>Mr. Wajid <br>
+                            Managing partner, Oxson Engineering</p>
+                        </div>
                     </div>
 
-                    <div class="mission-card-text black-card-text">
-                        <p>To be the most honest and ethical trade partner of choice. To provide superior carpentry
-                            labor and building components to the residential and commercial construction industry.
-                            To foster a work environment that encourages new ideas, new innovations and growth.</p>
+
+                    <div class="mission-card mission-card-black">
+
+                        <div class="mission-card-pic">
+                            <img src="assets\mission_statements\mr_adnaan.jpeg"
+                                alt="Mr. Adnaan Director, Oxson Engineering">
+                            <p>Mr. Zeshaan Khan <br>
+                            Director, Oxson Engineering</p>
+                        </div>
+
+                        <div class="mission-card-text black-card-text">
+                            <p>"To be the most honest and ethical trade partner of choice. To provide superior carpentry
+                                labor and building components to the residential and commercial construction industry.
+                                To foster a work environment that encourages new ideas, new innovations and growth."</p>
+                        </div>
                     </div>
                 </div>
             </div> <!-- MISSION ENGING TAG -->
@@ -195,143 +284,149 @@
         </div> <!-- ABOUT ENGING TAG -->
 
 
-        <div class="services-hero">
+        <div id="services" class="services-hero">
             <h1>VAST EXPERTISE IN COMMERCIAL, RESIDENTIAL AND PUBLIC CONSTRUCTION</h1>
-
             <div class="services-cards">
+                <div class="services-card">
 
-                <div class="services-pics">
-                    <img src="" alt="">
+                    <div class="services-pics">
+                        <img src="assets\oxson_pics_edited\Sewerage Works.png" alt="oxson_underwater_works">
+                    </div>
+
+                    <div class="services-card-text">
+                        <h2>MARINE St. & UNDER WATER WORKS</h2>
+                        <p>We have been working with Pakistan navy in the segment of Marine structures and Under Water
+                            works (under the category of CE-03) for years. Our professional excellence has enabled us to
+                            win navy tenders and contracts over a vast span of time. Our top clients include Pakistan
+                            Navy.</p>
+                    </div>
+
                 </div>
 
-                <div class="services-card-text">
-                    <h2>MARINE St. & UNDER WATER WORKS</h2>
-                    <p>We have been working with Pakistan navy in the segment of Marine structures and Under Water
-                        works (under the category of CE-03) for years. Our professional excellence has enabled us to
-                        win navy tenders and contracts over a vast span of time. Our top clients include Pakistan
-                        Navy.</p>
+
+                <div class="services-card">
+
+
+
+                    <div class="services-card-text-odd">
+                        <h2>ROADS & PAVEMENTS</h2>
+                        <p>Oxson engineering is one of the fastest growing company in the field of Roads and pavements
+                            constructions (under the category of CE-10). Our dedication, hard work and professionalism
+                            has enabled us to win not only government but scores of private contracts as well. Our top
+                            clients include DHA, Bahria town, LDA and NHA just to mention a few.</p>
+                    </div>
+                    <div class="services-pics-odd">
+                        <img src="assets\oxson_pics_edited\Road_Pavements.png" alt="oxson_roads_and_pavements">
+                    </div>
+
                 </div>
 
-            </div>
 
+                <div class="services-card">
 
-            <div class="services-cards">
+                    <div class="services-pics">
+                        <img src="assets\oxson_pics_edited\home_construction.jpeg"
+                            alt="oxson_commercial_and_residential_construction">
+                    </div>
 
+                    <div class="services-card-text">
+                        <h2>COMMERCIAL AND RESIDENTIAL CONSTRUCTION</h2>
+                        <p>Through our dedication and long stretches of commitment to the residential construction
+                            sector, we've been able to produce some of the finest products there are in the market. Our
+                            expertise and experience enable us to deliver the best of both worlds; quality and pricing.
+                        </p>
+                    </div>
 
-
-                <div class="services-card-text">
-                    <h2>ROADS & PAVEMENTS</h2>
-                    <p>Oxson engineering is one of the fastest growing company in the field of Roads and pavements
-                        constructions (under the category of CE-10). Our dedication, hard work and professionalism
-                        has enabled us to win not only government but scores of private contracts as well. Our top
-                        clients include DHA, Bahria town, LDA and NHA just to mention a few.</p>
                 </div>
-                <div class="services-pics">
-                    <img src="" alt="">
-                </div>
-
-            </div>
-
-
-            <div class="services-cards">
-
-                <div class="services-pics">
-                    <img src="" alt="">
-                </div>
-
-                <div class="services-card-text">
-                    <h2>COMMERCIAL AND RESIDENTIAL CONSTRUCTION</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius ear</p>
-                </div>
-
             </div>
 
 
         </div> <!-- SERVICES ENGING TAG -->
 
 
-        <div class="portfolio-main">
+        <div id="portfolio" class="portfolio-main">
             <h2>INNOVATION THROUGH DEDICATION</h2>
-            <div class="protfolio-pics">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="portfolio-pics">
+                <img src="assets\oxson_pics_edited\Marine_Works.png" alt="oxson_home_construction">
+                <img src="assets\oxson_pics_edited\Building_Maintenance_01.png" alt="oxson_building_maintenance">
+                <img src="assets\oxson_pics_edited\Concrete_Repairs.png" alt="oxson_concrete_repairs">
+                <img src="assets\oxson_pics_edited\land_reclaim.png" alt="oxson_land_reclaim">
+                <img src="assets\oxson_pics_edited\Marine_Works.png" alt="oxson_marine_works">
+                <img src="assets\oxson_pics_edited\Road_Pavements.png" alt="oxson_road_pavements">
+                <img src="assets\oxson_pics_edited\Sewerage Works.png" alt="oxson_sewerage_works">
+                <img src="assets\oxson_pics_edited\water_proofing.png" alt="oxson_water_proofing">
+                <img src="assets\oxson_pics_edited\Water_Supply_01.png" alt="oxson_water_supply_01">
 
             </div>
         </div> <!-- PORTFOLIO ENGING TAG -->
 
         <footer>
-            <div class="row footerHeroDiv">
+            <div id="contact" class="footer-main">
+                <div class="footer-wrapper">
+                    <div class="footer-offices">
 
-                <div class="row footerAddresses">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h1>PU<br></h1>
-                        <h3>Lahore — Shop 10-12, <br> Mehboob-e-Subhani Market, <br> Bhobattian Chowk,<br> Main Raiwind
-                            Road,
-                            55150.<br>
-                        </h3>
+                        <div class="footer-office">
+                            <h1>LHR</h1>
+                            <a href="https://goo.gl/maps/GSFWknadp7HTtTt37" target="_blank">
+                                <p>M. K. Plaza, 9-E Punjab Government Employees Cooperating Housing Society, Phase II, Lahore.</p>
+                            </a>
+                        </div>
+
+                        <div class="footer-office">
+                            <h1>MU</h1>
+                            <a href="https://goo.gl/maps/gHBqvjhqgjXNchHz6" target="_blank">
+                                <p>Office near Bahadarpur metro station, Bahadarpur, Multan.</p>
+                            </a>
+
+                        </div>
+
+                        <div class="footer-sm-links">
+
+                            <a href="https://www.facebook.com/" target="_blank" ><img src="assets\oxson_logos\kindpng_7038825.png" alt="oxson_fb_page"></a>
+                            <a href="https://www.instagram.com/"  target="_blank"><img src="assets\oxson_logos\kindpng_2259932.png" alt="oxson_ig_page"></a>
+
+                        </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 hide">
-                        <h1>SN<br></h1>
-                        <h3><br><br> Karachi — Opening Soon.<br></h3>
+                    <div class="footer-contacts">
+                        <div class="footer-inquiry">
+                            <h3>Inquiries</h3>
+                            <a href="mailto:inquiries@oxsoneng.com">inquiries@oxsoneng.com</a><br>
+                            <a href="tel:+923001291444">+92 300 12 91 444</a>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h3>Contact</h3>
+                            <a href="mailto:hi@oxsoneng.com">hi@oxsoneng.com</a>, 
+                            <a href="mailto:oxsonengineering@gmail.com">Oxsonengineering@gmail.com</a><br>
+                            <a href="tel:+923024064624">+92 302 40 64 624</a>
+                        </div>
+
+                        <div class="footer-engage">
+                            <h3>Engage now</h3>
+                            <a href="mailto:sales@oxsoneng.com">sales@oxsoneng.com</a><br>
+                            <a href="tel:+924235233532">+92 42 35 233 532</a>
+                        </div>
+
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 hide">
-                        <h1>ISB<br></h1>
-                        <h3><br><br> Islamabad — Opening Soon.<br></h3>
+                    <div class="footer-legals">
+                        <div class="footer-copyright">
+                            <p>&copy; OXSON ENGINEERING</p>
+                        </div>
+                        <div class="footer-kiazend">
+                            <p>Built with love by <a href="http://kiazend.com/" target="_blank">KIAZEND</a></p>
+                        </div>
+
+                        <div class="footer-legal">
+                            <p><a href="#">Privacy</a>, <a href="">Terms</a></p>
+                        </div>
                     </div>
 
 
                 </div>
-
-                <div class="row footerInquiries">
-
-                    <div class="col-md-4 col-lg-4 col-sm-12 footerTxt">
-                        <h5> New Business </h5><a href="mailto:engage@kiazend.com">engage@kiazend.com</a> <br><a
-                            href="tel:+923254410555">+92-325-44-10-555</a>
-                    </div>
-
-                    <div class="col-md-4 col-lg-4 col-sm-12 footerTxt">
-                        <h5>General Inquiries</h5><a href="mailto:hi@kiazend.com">hi@kiazend.com</a> <br><a
-                            href="tel:+923294771882">
-                            +92-325-44-10-555</a>
-                    </div>
-
-                    <div class="col-md-4 col-lg-4 col-sm-12 hide footerTxt">
-                        <h5>Careers</h5><a href="mailto:careers@kiazend.com">careers@kiazend.com </a> <br><strong><a
-                                href="careers">View openings</a> </strong>
-                    </div>
-
-                </div>
-
-                <div class="footerGeneral">
-                    <div class="col-md-4 col-lg-4 col-sm-12">©2022 Oxson Engineering</div>
-                    <div class="col-md-4 col-lg-4 col-sm-12">
-                        <p>Made with love by</p>
-                        <a href="https://www.Kiazend.com" class="">Kiazend</a>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12">
-                        <a href="#" class="footerSocialMediaLinks">Privacy</a>,
-                        <a href="#" class="footerSocialMediaLinks">Terms</a>
-                    </div>
-                </div>
-
             </div>
-
         </footer>
-
-
 
 
 
@@ -339,7 +434,7 @@
 
 
 
-
+<script src="js\oxson.js"></script>
 
 </body>
 
