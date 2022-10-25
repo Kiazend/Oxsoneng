@@ -1,4 +1,3 @@
-
 /* ROOT */
 :root{
     --grey:#808080;
@@ -19,12 +18,20 @@ html{
     overflow-x: hidden;
  }
 
+
+ /* FOR DESKTOP */
+ @media screen and (min-width:991px) {
+
+  #cross, #hamburger{
+    display: none;
+  }
  /* NAVBAR */
  .nav{
     display: flex;
     width: 100vw;
     height: 16.5vh;
     align-items: center;
+    /* justify-content: center; */
     z-index: 10;
  }
  .nav-logo{
@@ -32,15 +39,17 @@ html{
     height: 15.5vh;
     position: relative;
     left: 11.4vw;
-    top: 0.5vh;
+    /* top: 3vh; */
     
  }
 
  .nav-items{
-    width: 35.93vw;
+    width: 43.93vw;
     position: relative;
-    left: 43.020vw;
-    top: 1.2vh;
+    left: 38.020vw;
+    display: flex;
+    align-content: center;
+    /* top: 1.2vh; */
    
 
  }
@@ -51,6 +60,7 @@ html{
     text-align: center;
 
  }
+ 
 
  /* LANDING SECTION */
  .landing-hero{
@@ -98,6 +108,9 @@ html{
 
  }
 /* ABOUT SECTION */
+.about-hero{
+  overflow-x: hidden;
+}
  .about-hero>h1{
     text-align: center;
  }
@@ -135,6 +148,7 @@ html{
    margin: 10px 5px;
    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
  }
+ 
  .oxson-client>img{
    width:9.1vw ;
    height: 17vh;
@@ -142,6 +156,9 @@ html{
    object-fit: contain;
 
  }
+ .oxson-client>img:hover{
+box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
  .certification-category{
    /* width: 10%;
    column-span: 1; */
@@ -160,12 +177,11 @@ html{
    
  }
  
- .about-table tr{
-   /* border-bottom : 3px solid var(--grey); */
- }
-
  /* MISSION SECTION */
  
+ .mission-hero{
+  overflow-x: hidden;
+ }
  .mission-hero>h1{
 text-align: center;
 margin-top: 15vh;
@@ -186,7 +202,7 @@ margin-top: 15vh;
    justify-content: center;
    text-align: center;
    flex-wrap: wrap;
- 
+ /* overflow-x: hidden; */
    padding: 0 4vw;
 }
  .mission-card {
@@ -313,6 +329,643 @@ footer{
   height: 60px;
 }
 
+
+}
+/* FOR LARGE TABLETS */
+@media screen and (max-width:990px) and (min-width:767px) {
+  
+  
+  #cross, .hide{
+    display: none;
+  }
+  .nav{
+    display: flex;
+    width: 100vw;
+    height: 10.5vh;
+    align-items: center;
+    z-index: 10;
+ }
+ .nav-logo{
+    width: 110px;
+    height: auto;
+    position: relative;
+    left: 11.4vw;
+ }
+ 
+.hide{
+  /* display: none; */
+}
+.nav-items{
+  background-color: white;
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  right: 0; 
+  top: 5vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+
+}
+
+.nav-item{
+  padding: 1vh 0;
+  overflow-x: visible;
+  border: 2px solid black;
+}
+
+ /* LANDING SECTION */
+ .landing-hero{
+    width: 100vw;
+    height: 56.179vh;
+ }
+ .landing-hero-banner>img{
+    width: 95vw;
+    height: 46.179vh;
+    object-fit: cover;
+    border-radius: 3px;
+    z-index: 0;
+ }
+ .landing-hero-banner{
+    text-align: center;
+    overflow-y: hidden;
+ }
+ .landing-banner>img{
+    width: 11.2vw;
+    height: auto;
+    position: absolute;
+    top:35.18vh;
+    left: 2vw;
+ }
+ .landing-banner{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 46.179vh;
+    width: 30vw;
+    z-index: 1;
+    top: 10.5vh;
+    left: 2.5vw;
+ }
+ .landing-text{
+  color: white;
+  position: absolute;
+  top: 35.18vh;
+  left: var(--heroBannerLeft);
+  z-index: 10;
+  width: 14vw;
+  height: auto;
+  text-align: left;
+  border-left: 1px solid white;
+  padding-left: 10px;
+
+ }
+/* ABOUT SECTION */
+.about-hero{
+  overflow-x: hidden;
+}
+ .about-hero>h1{
+    text-align: center;
+ }
+ .about-cards{
+   margin: 0 3vw 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+ }
+ .about-pic{
+   width: 35vw;
+   
+
+ }
+ .about-pic>img{
+   width: 13.802vw;
+   height: auto;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+ .about-text{
+   width: 35vw;
+ }
+ #oxson-clients{
+   display: flex;
+   flex-flow: row wrap;
+   width: 45vw;
+   align-content: center;
+   justify-content: center;
+ }
+ .oxson-client{
+   
+   width:9.1vw ;
+   height: 17vh;
+   margin: 10px 5px;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .oxson-client>img{
+   width:9.1vw ;
+   height: 17vh;
+   
+   object-fit: contain;
+
+ }
+ .oxson-client>img:hover{
+box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+ .certification-category{
+   /* width: 10%;
+   column-span: 1; */
+ }
+ .about-table{
+   width: 40vw;
+   position: relative;
+   right: 3vw;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+.certification-details{
+   /* column-span: 3; */
+}
+ .certification-details>ul {
+   list-style: disc;
+   
+ }
+ 
+ /* MISSION SECTION */
+ .mission-hero{
+  overflow-x: hidden;
+ }
+ .mission-hero>h1{
+text-align: center;
+margin-top: 15vh;
+ }
+ .mission-hero>p, .services-hero>h1, .portfolio-main>h2{
+  /* color: blue; */
+   text-align: center;
+   width: 60vw;
+   position: relative;
+   left: 20vw;
+   margin: 8vh 0;
+ }
+
+ .mission-cards{
+   display: flex;
+   width: 100vw;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+ 
+   padding: 0 4vw;
+}
+ .mission-card {
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px 0;
+   margin: 2vh 0;
+   position: relative;
+   left: 10vw;
+   border-radius: 40px 0 0 40px;
+  }
+  .mission-card-pic>img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 1vh;
+  }
+ 
+ .mission-card-black{
+   color: white;
+   background-color: rgb(33, 33, 33);
+   box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+ }
+
+.mission-card-text>p, .mission-card-pic{
+  position: relative;
+  right: 10vw; 
+} 
+.services-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8vh 0;
+}
+
+.services-pics>img{
+  width: 40vw;
+  height: 35vh;
+  position: relative;
+  object-fit: scale-down;
+  left: 8vw;
+  border-radius: 5px;
+  /* box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2); */
+}
+.services-card-text{
+  width: 30vw;
+  position: relative;
+  right: 20vw;
+}
+.services-pics-odd>img{
+  width: 40vw;
+  height: 35vh;
+  position: relative;
+  object-fit: scale-down;
+  left: 30vw;
+  border-radius: 5px;
+  /* box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2); */
+}
+.services-card-text-odd{
+  width: 30vw;
+  position: relative;
+  left: 8vw;
+}
+.portfolio-main{
+  margin: 18vh 0 8vh;
+}
+.portfolio-pics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  flex-wrap: wrap;
+  position: relative;
+  left: 5vw;
+}
+.portfolio-pics>img{
+  margin: 10px;
+  width: 27.6vw;
+  height: 22vh;
+  object-fit: scale-down;
+  border-radius: 5px;
+  /* box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2); */
+}
+
+footer{
+  color: white;
+  background-color: black;
+  width: 100vw;
+  height: 65vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+.footer-main{
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer-offices, .footer-legals, .footer-contacts{
+  display: flex;
+  margin: 5vh 2vw;
+}
+.footer-office, .footer-sm-links, .footer-inquiry, .footer-contact, .footer-engage, .footer-copyright, .footer-legal , .footer-kiazend{
+  width: 30%;
+  padding: 0 6vw;
+}
+.footer-legal{
+  visibility: hidden;
+}
+.footer-sm-links>a>img{
+  width: 50px;
+  object-fit: contain;
+  height: 50px;
+}
+.footer-sm-links>a>img:hover{
+  width: 60px;
+  object-fit: contain;
+  height: 60px;
+}
+
+
+}
+/* FOR MEDIUM TABLETS */
+@media screen and (max-width:766px) and (min-width:300px) {
+  #cross, .hide{
+    display: none;
+  }
+  .nav{
+    display: flex;
+    width: 100vw;
+    height: 10.5vh;
+    align-items: center;
+    z-index: 10;
+ }
+ .nav-logo{
+    width: 80px;
+    height: auto;
+    position: relative;
+    left: 11.4vw;
+ }
+ 
+.hide{
+  /* display: none; */
+}
+.nav-items{
+  background-color: white;
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  right: 2vw; 
+  top: 5vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+
+}
+
+.nav-item{
+  padding: 1vh 0;
+  overflow-x: visible;
+  border: 1px solid black;
+}
+
+ /* LANDING SECTION */
+ .landing-hero{
+    width: 100vw;
+    height: 45.179vh;
+ }
+ .landing-hero-banner>img{
+    width: 95vw;
+    height: 40.179vh;
+    object-fit: cover;
+    border-radius: 3px;
+    z-index: 0;
+ }
+ .landing-hero-banner{
+    text-align: center;
+    overflow-y: hidden;
+ }
+ .landing-banner>img{
+    width: 11.2vw;
+    height: auto;
+    position: absolute;
+    top:30.18vh;
+    left: 2vw;
+ }
+ .landing-banner{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 40.179vh;
+    width: 35vw;
+    z-index: 1;
+    top: 10.5vh;
+    left: 2.5vw;
+ }
+ .landing-text{
+  color: white;
+  position: absolute;
+  top: 30.18vh;
+  left: var(--heroBannerLeft);
+  z-index: 10;
+  width: 14vw;
+  height: auto;
+  text-align: left;
+  border-left: 1px solid white;
+  padding-left: 10px;
+
+ }
+/* ABOUT SECTION */
+.about-hero{
+  overflow-x: hidden;
+}
+ .about-hero>h1{
+    text-align: center;
+ }
+ .about-cards{
+   margin: 0 3vw 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+ }
+ .about-pic{
+   width: 35vw;
+ }
+ .about-pic>img{
+   width: 28.802vw;
+   height: auto;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .about-text{
+   width: 35vw;
+ }
+ #oxson-clients{
+   display: flex;
+   flex-flow: row wrap;
+   width: 45vw;
+   align-content: center;
+   justify-content: center;
+ }
+ .oxson-client{
+   width:8.5vw ;
+   height: 6vh;
+   margin: 10px 5px;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .oxson-client>img{
+   width:9.1vw ;
+   height: 7vh;
+   
+   object-fit: contain;
+
+ }
+ .oxson-client>img:hover{
+box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+ .about-table{
+   width: 40vw;
+   position: relative;
+   right: 3vw;
+   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .certification-details>ul {
+   list-style: disc;
+   
+ }
+ 
+ /* MISSION SECTION */
+ .mission-hero{
+  overflow-x: hidden;
+ }
+ .mission-hero>h1{
+text-align: center;
+margin-top: 5vh;
+ }
+ .mission-hero>p, .services-hero>h1, .portfolio-main>h2{
+  /* color: blue; */
+   text-align: center;
+   width: 60vw;
+   position: relative;
+   left: 20vw;
+   margin: 3vh 0;
+ }
+
+ .mission-cards{
+   display: flex;
+   width: 100vw;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+ 
+   padding: 0 4vw;
+}
+ .mission-card {
+   width: 90vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px 0;
+   margin: 2vh 0;
+   position: relative;
+   left: 10vw;
+   border-radius: 40px 0 0 40px;
+  }
+  .mission-card-pic>img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 1vh;
+  }
+ 
+ .mission-card-black{
+   color: white;
+   background-color: rgb(33, 33, 33);
+   box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+   padding: 15px;
+ }
+
+.mission-card-text>p, .mission-card-pic{
+  position: relative;
+  right: 10vw; 
+} 
+.services-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh 0;
+}
+
+.services-pics>img{
+  width: 40vw;
+  height: 25vh;
+  position: relative;
+  object-fit: scale-down;
+  left: 8vw;
+  border-radius: 5px;
+  /* box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2); */
+}
+.services-card-text{
+  width: 50vw;
+  position: relative;
+  right: 10vw;
+}
+.services-pics-odd>img{
+  width: 40vw;
+  height: 25vh;
+  position: relative;
+  object-fit: scale-down;
+  left: 30vw;
+  border-radius: 5px;
+  /* box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2); */
+}
+.services-card-text-odd{
+  width: 30vw;
+  position: relative;
+  left: 12vw;
+}
+.portfolio-main{
+  margin: 18vh 0 8vh;
+}
+.portfolio-pics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  flex-wrap: wrap;
+  position: relative;
+  left: 5vw;
+}
+.portfolio-pics>img{
+  margin: 10px;
+  width: 90vw;
+  height: 40vh;
+  object-fit:cover;
+  border-radius: 5px;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+  color: white;
+  background-color: black;
+  width: 100vw;
+  height: 120vh;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  
+}
+.footer-main{
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer-offices, .footer-legals, .footer-contacts{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* margin: 5vh 2vw; */
+}
+.footer-office, .footer-sm-links, .footer-inquiry, .footer-contact, .footer-engage, .footer-copyright, .footer-legal , .footer-kiazend{
+  width: 100%;
+  padding: 3vh 6vw;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+}
+.footer-legal{
+  visibility: hidden;
+}
+.footer-sm-links>a>img{
+  width: 50px;
+  object-fit: contain;
+  height: 50px;
+}
+.footer-sm-links>a>img:hover{
+  width: 60px;
+  object-fit: contain;
+  height: 60px;
+}
+
+
+}
+/* FOR MOBILES */
+/* @media screen and (max-width:479px) {
+  
+
+
+} */
 
 
 

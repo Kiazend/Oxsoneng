@@ -12,12 +12,13 @@
 }
 
 .nav-items>a{
-    font-size: large;
+    font-size: 0.9rem;
     text-decoration: none;
     color: var(--black);
 }
 .nav-items>a:hover{
     color: var(--grey);
+    text-decoration: none;
 }
 
 p{
@@ -25,7 +26,7 @@ p{
 }
 
 #landing-banner-text{
-    font-size: 1.5rem;
+    font-size: 1.45rem;
 }
 
 .mission-hero>p, .mission-card-text{
@@ -42,7 +43,8 @@ p{
   }
 
 .portfolio-main>h2{
-    font-weight: 800;
+  font-size: 1.6rem;
+    font-weight: 300;
 }
 
 footer h1, footer h3{
@@ -57,3 +59,114 @@ footer h1, footer h3{
     color: grey;
   }
   
+
+  @media screen and (max-width:990px) and (min-width:767px) {
+    .nav-items>a{
+      font-size: 0.6rem;
+   }
+   #landing-banner-text{
+    font-size: 0.6rem;
+  }
+  p{
+    font-size: 0.4rem;
+}
+.about-hero>h1, .mission-hero>h1, .services-hero h1, .portfolio-main h1{
+  font-size: 1.6rem;
+  margin-bottom: 6vh;
+}
+.about-text>p, .about-text>a, .about-text li, .certification-table li, .certification-category
+,.certification-table th, .services-card-text>p{
+font-size: 0.7rem;
+}
+
+.mission-hero>p,.mission-card-text p{
+font-size: 0.85rem;
+}
+.services-card-text-odd>h2, .services-card-text>h2{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.services-card-text-odd>p, .services-card-text>p{
+  margin-top: 4px;
+}
+.footer-main a, .footer-main p{
+  font-size: 0.8rem;
+}
+}
+
+@media screen and (max-width:766px) and (min-width:480px) {
+  .nav-items>a{
+    font-size: 0.45rem;
+ }
+ #landing-banner-text{
+  font-size: 0.4rem;
+}
+p{
+  font-size: 0.4rem;
+}
+.about-hero>h1, .mission-hero>h1, .services-hero h1, .portfolio-main h1{
+font-size: 1.2rem;
+margin-bottom: 6vh;
+}
+.about-text>p, .about-text>a, .about-text li, .certification-table li, .certification-category
+,.certification-table th, .services-card-text>p{
+font-size: 0.4rem;
+}
+
+.mission-hero>p,.mission-card-text p{
+font-size: 0.6rem;
+}
+.services-card-text-odd>h2, .services-card-text>h2{
+font-size: 0.8rem;
+font-weight: 400;
+}
+.services-card-text-odd>p, .services-card-text>p{
+margin-top: 4px;
+}
+.footer-office>h1{
+  font-size: 1.3rem;
+  /* text-align: center; */
+}
+.footer-main a, .footer-main p{
+  /* text-align: center; */
+font-size: 0.9rem;
+}
+}
+@media screen and (max-width:479px) and (min-width:300px) {
+  .nav-items>a{
+    font-size: 0.4rem;
+ }
+ #landing-banner-text{
+  font-size: 0.2rem;
+}
+p{
+  font-size: 0.2rem;
+}
+.about-hero>h1, .mission-hero>h1, .services-hero h1, .portfolio-main h1{
+font-size: 0.9rem;
+margin-bottom: 6vh;
+}
+.about-text>p, .about-text>a, .about-text li, .certification-table li, .certification-category
+,.certification-table th, .services-card-text>p{
+font-size: 0.4rem;
+}
+
+.mission-hero>p,.mission-card-text p{
+font-size: 0.4rem;
+}
+.services-card-text-odd>h2, .services-card-text>h2{
+font-size: 0.7rem;
+font-weight: 400;
+}
+.services-card-text-odd>p, .services-card-text>p{
+margin-top: 4px;
+}
+.footer-office>h1{
+  font-size: 1.3rem;
+  /* text-align: center; */
+}
+.footer-main a, .footer-main p{
+  /* text-align: center; */
+font-size: 0.9rem;
+}
+}
