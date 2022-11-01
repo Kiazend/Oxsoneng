@@ -40,6 +40,7 @@ p{
   }
   .services-card-text-odd>p, .services-card-text>p{
     margin-top: 10px;
+    font-size: 1rem;
   }
 
 .portfolio-main>h2{
@@ -78,6 +79,9 @@ footer h1, footer h3{
 ,.certification-table th, .services-card-text>p{
 font-size: 0.7rem;
 }
+.certification-table li{
+  list-style-position: outside;
+}
 
 .mission-hero>p,.mission-card-text p{
 font-size: 0.85rem;
@@ -88,6 +92,7 @@ font-size: 0.85rem;
 }
 .services-card-text-odd>p, .services-card-text>p{
   margin-top: 4px;
+  font-size: 0.75rem;
 }
 .footer-main a, .footer-main p{
   font-size: 0.8rem;
@@ -112,16 +117,20 @@ margin-bottom: 6vh;
 ,.certification-table th, .services-card-text>p{
 font-size: 0.4rem;
 }
+.certification-table li{
+  list-style-position: outside;
+}
 
 .mission-hero>p,.mission-card-text p{
 font-size: 0.6rem;
 }
 .services-card-text-odd>h2, .services-card-text>h2{
-font-size: 0.8rem;
+font-size: 1rem;
 font-weight: 400;
 }
 .services-card-text-odd>p, .services-card-text>p{
 margin-top: 4px;
+font-size: 0.65rem;
 }
 .footer-office>h1{
   font-size: 1.3rem;
@@ -150,6 +159,9 @@ margin-bottom: 6vh;
 ,.certification-table th, .services-card-text>p{
 font-size: 0.4rem;
 }
+.certification-table li{
+  list-style-position: outside;
+}
 
 .mission-hero>p,.mission-card-text p{
 font-size: 0.4rem;
@@ -157,9 +169,12 @@ font-size: 0.4rem;
 .services-card-text-odd>h2, .services-card-text>h2{
 font-size: 0.7rem;
 font-weight: 400;
+text-align: justify;
 }
 .services-card-text-odd>p, .services-card-text>p{
 margin-top: 4px;
+font-size: 0.5rem;
+text-align: justify;
 }
 .footer-office>h1{
   font-size: 1.3rem;
